@@ -1,18 +1,20 @@
 {
-"manifest_version": 2,
+"manifest_version": 3,
 "name": "CodingNinjaHub",
 "description": "Automatically integrate your Coding Ninja's submissions to GitHub Repo",
 "version": "1.0",
-"browser_action": {
-"default_icon": "ICON (WITH EXTENSION)",
-"default_popup": "LAYOUT HTML FILE"
+"action": {
+"default_icon": "Sample.png",
+"default_popup": "popup.html"
 },
-"permissions": [
-     "https://github.com/*",
+ "host_permissions": [
+    "https://github.com/*",
     "https://api.github.com/*",
     "https://leetcode.com/*",
-    "https://practice.geeksforgeeks.org/*",
-    "tabs",
+    "https://practice.geeksforgeeks.org/*"
+  ],
+"permissions": [
+ "tabs",
     "unlimitedStorage",
     "storage"
 ]
