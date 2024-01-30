@@ -309,7 +309,7 @@ chrome.storage.local.get('mode_type', (data) => {
 
   if (mode && mode === 'commit') {
     /* Check if still access to repo */
-    chrome.storage.local.get('leethub_token', (data2) => {
+    chrome.storage.local.get('codingninjahub_token', (data2) => {
       const token = data2.leethub_token;
       if (token === null || token === undefined) {
         /* Not authorized yet. */

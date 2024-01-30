@@ -7,6 +7,10 @@
 "default_icon": "Sample.png",
 "default_popup": "popup.html"
 },
+"background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
  "host_permissions": [
     "https://github.com/*",
     "https://api.github.com/*",
